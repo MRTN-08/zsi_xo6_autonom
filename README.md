@@ -10,3 +10,6 @@ A feladat egy **okos közlekedési lámpa rendszer** szimulációja két node se
 - a `traffic_light_node` váltogatja a lámpa állapotát (zöld, sárga, piros),  
 - a `car_node` figyeli az állapotot, és ennek alapján „vezetési döntéseket” hoz (halad, lassít, megáll).
 
+graph LR
+    A[/traffic_light_node/] -->|/traffic/state| B[/car_node/]
+    B -->|/car/status| C[/console/]
