@@ -9,3 +9,8 @@ Célja, hogy gyakorlati tapasztalatot adjon a **ROS 2 publisher–subscriber** k
 A feladat egy **okos közlekedési lámpa rendszer** szimulációja két node segítségével:  
 - a `traffic_light_node` váltogatja a lámpa állapotát (zöld, sárga, piros),  
 - a `car_node` figyeli az állapotot, és ennek alapján „vezetési döntéseket” hoz (halad, lassít, megáll).
+
+
+graph LR
+  TL[/traffic_light_node/] -->|/traffic/state| CAR[/car_node/]
+  CAR -->|/car/status| CONSOLE[/console/]
