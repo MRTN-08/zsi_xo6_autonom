@@ -17,11 +17,30 @@ Célja, hogy gyakorlati tapasztalatot adjon a **ROS 2 publisher–subscriber** k
 
 ## ⚙️ Telepítés és futtatás
 
-1. Klónozd a repót:
+1. 📦 Clone the package:
 
    ```bash
    cd ~/ros2_ws/src
    git clone https://github.com/MRTN-08/zsi_xo6_autonom
+   
+2. ⚙️ Build ROS 2 package
+
+   ```bash
+   cd ~/ros2_ws
+   colcon build --packages-select zsi_xo6_autonom --symlink-install
+
+3. 🔗 Source the workspace
+   ```bash
+   source ~/ros2_ws/install/setup.bash
+
+4. ▶️ Launch the traffic system
+   ```bash
+   ros2 launch zsi_xo6_autonom traffic_system.launch.py
+
+5. 🏎️ Run individual nodes
+   ```bash
+   ros2 run zsi_xo6_autonom traffic_light_node
+   ros2 run zsi_xo6_autonom car_node
 
 
 ```mermaid
