@@ -23,7 +23,7 @@ Célja, hogy gyakorlati tapasztalatot adjon a **ROS 2 publisher–subscriber** k
    cd ~/ros2_ws/src
    git clone https://github.com/MRTN-08/zsi_xo6_autonom
    
-2. ⚙️ Build ROS 2 package
+2. c Build ROS 2 package
 
    ```bash
    cd ~/ros2_ws
@@ -42,7 +42,7 @@ Célja, hogy gyakorlati tapasztalatot adjon a **ROS 2 publisher–subscriber** k
    ros2 run zsi_xo6_autonom traffic_light_node
    ros2 run zsi_xo6_autonom car_node
    
-6.ROS 2 Traffic System – Monitor Traffic Light and Car States
+6. 📝ROS 2 Traffic System – Monitor Traffic Light and Car States
    ~~~bash
    # 1️⃣ Source the ROS2 workspace (required every time)
    source ~/ros2_ws/install/setup.bash
