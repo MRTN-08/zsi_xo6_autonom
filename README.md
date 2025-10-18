@@ -47,7 +47,6 @@ Célja, hogy gyakorlati tapasztalatot adjon a **ROS 2 publisher–subscriber** k
    ros2 topic echo /traffic/state
    ros2 topic echo /car/status
 
-
 ```mermaid
 graph LR
   TL[/traffic_light_node/] -->|/traffic/state| CAR[/car_node/]
