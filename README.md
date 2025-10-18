@@ -44,20 +44,9 @@ Célja, hogy gyakorlati tapasztalatot adjon a **ROS 2 publisher–subscriber** k
    
 6. 📝ROS 2 Traffic System – Monitor Traffic Light and Car States
    ~~~bash
-   # 1️⃣ Source the ROS2 workspace (required every time)
-   source ~/ros2_ws/install/setup.bash
+   ros2 topic echo /traffic/state
+   ros2 topic echo /car/status
 
-   # 2️⃣ Start the traffic light node (can also be run in a new terminal)
-   ros2 run zsi_xo6_autonom traffic_light_node &
-
-   # 3️⃣ Start the car node (also run in the background)
-   ros2 run zsi_xo6_autonom car_node &
-
-   # 4️⃣ Monitor the traffic light state
-   ros2 topic echo /traffic/state &
-
-   # 5️⃣ Monitor the car state
-   ros2 topic echo /car/status &
 
 ```mermaid
 graph LR
