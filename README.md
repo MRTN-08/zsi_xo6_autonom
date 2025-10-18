@@ -37,15 +37,17 @@ Célja, hogy gyakorlati tapasztalatot adjon a **ROS 2 publisher–subscriber** k
    ```bash
    ros2 launch zsi_xo6_autonom traffic_system.launch.py
 
-5. 🏎️ Run individual nodes
+5. 📝ROS 2 Traffic System – Monitor Traffic Light and Car States
+   ~~~bash
+   source ~/ros2_ws/install/setup.bash
+   ros2 topic echo /traffic/state
+   ros2 topic echo /car/status
+   
++ 🏎️ Run individual nodes (optional)
    ```bash
    ros2 run zsi_xo6_autonom traffic_light_node
    ros2 run zsi_xo6_autonom car_node
    
-6. 📝ROS 2 Traffic System – Monitor Traffic Light and Car States
-   ~~~bash
-   ros2 topic echo /traffic/state
-   ros2 topic echo /car/status
 
 ```mermaid
 graph LR
