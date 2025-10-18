@@ -43,11 +43,10 @@ Célja, hogy gyakorlati tapasztalatot adjon a **ROS 2 publisher–subscriber** k
    ros2 topic echo /traffic/state
    ros2 topic echo /car/status
    
-(+) 🏎️ Run individual nodes (optional)
+6. 🏎️ Run individual nodes (optional)
    ```bash
    ros2 run zsi_xo6_autonom traffic_light_node
    ros2 run zsi_xo6_autonom car_node
-   
 
 ```mermaid
 graph LR
